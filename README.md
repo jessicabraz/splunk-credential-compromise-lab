@@ -32,7 +32,7 @@ Ingested CSV files as data inputs with correct sourcetypes (phish_emails, login_
 ### Ran Example SPL Queries
 
 **1️⃣ All events:**
-```spl
+
 index="portifolio_lab2"
 
 
@@ -89,7 +89,7 @@ index="portifolio_lab2" sourcetype="login_logs" status="failed"
 index="portifolio_lab2" sourcetype="login_logs" status="success" NOT src_ip="192.168.*"
 | table timestamp, username, src_ip, device
 | sort - timestamp
-```
+
 
 Created Dashboard with panels for:
 
@@ -154,6 +154,7 @@ Markdown for documentation (GitHub)
 Jessica Braz — Cybersecurity Student
 Location: Australia
 GitHub: https://github.com/jessicabraz
+
 
 
 
