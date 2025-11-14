@@ -1,11 +1,13 @@
-🧠 Project 2 — Credential Compromise Detection Lab (Splunk)
+# 🧠 Project 2 — Credential Compromise Detection Lab (Splunk)
 
-🎯 Objective
+## 🎯 Objective
 
 Simulate a security investigation using Splunk Free (Local) to detect credential compromise through phishing, suspicious logins, and process activity.
 This lab demonstrates how to correlate multiple log sources, identify risky behaviors, and build dashboards and alerts for SOC analysis.
 
-🧩 Dataset
+---
+
+## 🧩 Dataset
 
 Simulated CSV files created for this lab:
 
@@ -17,7 +19,9 @@ process_activity.csv — process execution logs (proc_id, timestamp, host, usern
 
 All data is fictional and for educational purposes only.
 
-⚙️ Steps Summary
+---
+
+## ⚙️ Steps Summary
 
 Installed and opened Splunk Free locally on a VM or PC.
 
@@ -76,7 +80,9 @@ User clicked phishing email → successful login (trigger if results > 0)
 
 Multiple failed login attempts (≥5 in 10 minutes)
 
-📊 Dashboard Examples
+---
+
+## 📊 Dashboard Examples
 
 dashboard-credential-compromise.png — full dashboard overview
 
@@ -84,7 +90,9 @@ events-jessica.png — timeline of phishing → login → process activity
 
 alert-config.png — alert configuration screenshot
 
- 🔍Results
+---
+
+## 🔍Results
 
 Identified users who clicked phishing emails and subsequently logged in successfully.
 
@@ -94,7 +102,9 @@ Visualized attack timelines and top source IPs.
 
 Configured alerts for potentially compromised accounts.
 
-💡 Key Takeaways
+---
+
+## 💡 Key Takeaways
 
 Learned multi-source correlation using SPL queries.
 
@@ -104,7 +114,9 @@ Practiced SOC workflow: detection → investigation → documentation.
 
 Reinforced understanding of credential compromise and lateral movement techniques.
 
-🚀 Next Steps
+---
+
+## 🚀 Next Steps
 
 Ingest real-world log sources (network, Linux, cloud) for extended correlation.
 
@@ -112,7 +124,9 @@ Automate alert response with scripts or webhooks.
 
 Simulate lateral movement and escalated attacks to enhance lab complexity.
 
-🧰 Tools Used
+---
+
+## 🧰 Tools Used
 
 Splunk Free (Local)
 
@@ -120,8 +134,11 @@ CSV simulated datasets
 
 Markdown for documentation (GitHub)
 
-👩‍💻 Author
+---
+
+## 👩‍💻 Author
 
 Jessica Braz — Cybersecurity Student
 Location: Australia
 GitHub: https://github.com/jessicabraz
+
