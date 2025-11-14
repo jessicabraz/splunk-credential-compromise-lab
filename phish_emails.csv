@@ -1,0 +1,52 @@
+email_id,timestamp,recipient,subject,clicked
+ph1,2025-11-01T08:05:00Z,jessicabraz@example.com,"Important: Verify your account",true
+ph2,2025-11-01T08:10:12Z,user01@example.com,"Password reset required",false
+ph3,2025-11-01T08:15:33Z,user02@example.com,"Urgent: Confirm your login",true
+ph4,2025-11-01T08:20:45Z,admin@example.com,"Security alert",true
+ph5,2025-11-01T08:25:10Z,jessicabraz@example.com,"New login detected",false
+ph6,2025-11-01T08:30:22Z,user01@example.com,"Verify your account",true
+ph7,2025-11-01T08:35:33Z,user02@example.com,"Update password immediately",false
+ph8,2025-11-01T08:40:12Z,admin@example.com,"Account locked",true
+ph9,2025-11-01T08:45:55Z,jessicabraz@example.com,"Action required",true
+ph10,2025-11-01T08:50:20Z,user01@example.com,"Security notice",false
+ph11,2025-11-01T08:55:33Z,user02@example.com,"Password expired",true
+ph12,2025-11-01T09:00:05Z,admin@example.com,"Login attempt failed",true
+ph13,2025-11-01T09:05:10Z,jessicabraz@example.com,"Verify identity",false
+ph14,2025-11-01T09:10:12Z,user01@example.com,"Confirm credentials",true
+ph15,2025-11-01T09:15:42Z,user02@example.com,"Urgent security update",true
+ph16,2025-11-01T09:20:05Z,admin@example.com,"Account verification",false
+ph17,2025-11-01T09:25:12Z,jessicabraz@example.com,"Password reset required",true
+ph18,2025-11-01T09:30:42Z,user01@example.com,"Confirm login",true
+ph19,2025-11-01T09:35:10Z,user02@example.com,"Security alert",false
+ph20,2025-11-01T09:40:33Z,admin@example.com,"Verify your account",true
+ph21,2025-11-01T09:45:05Z,jessicabraz@example.com,"Action needed",true
+ph22,2025-11-01T09:50:12Z,user01@example.com,"Account locked",false
+ph23,2025-11-01T09:55:42Z,user02@example.com,"Update password",true
+ph24,2025-11-01T10:00:10Z,admin@example.com,"Security warning",true
+ph25,2025-11-01T10:05:33Z,jessicabraz@example.com,"Login suspicious",false
+ph26,2025-11-01T10:10:05Z,user01@example.com,"Verify credentials",true
+ph27,2025-11-01T10:15:12Z,user02@example.com,"Urgent action",true
+ph28,2025-11-01T10:20:42Z,admin@example.com,"Confirm identity",false
+ph29,2025-11-01T10:25:10Z,jessicabraz@example.com,"Account alert",true
+ph30,2025-11-01T10:30:33Z,user01@example.com,"Immediate password change",true
+ph31,2025-11-01T10:35:05Z,user02@example.com,"Security update",false
+ph32,2025-11-01T10:40:12Z,admin@example.com,"Verify login",true
+ph33,2025-11-01T10:45:42Z,jessicabraz@example.com,"Password reset",true
+ph34,2025-11-01T10:50:10Z,user01@example.com,"Confirm security",false
+ph35,2025-11-01T10:55:33Z,user02@example.com,"Urgent: Action required",true
+ph36,2025-11-01T11:00:05Z,admin@example.com,"Account review",true
+ph37,2025-11-01T11:05:12Z,jessicabraz@example.com,"New login alert",false
+ph38,2025-11-01T11:10:42Z,user01@example.com,"Verify account",true
+ph39,2025-11-01T11:15:10Z,user02@example.com,"Security notice",true
+ph40,2025-11-01T11:20:33Z,admin@example.com,"Password expired",false
+ph41,2025-11-01T11:25:05Z,jessicabraz@example.com,"Action required",true
+ph42,2025-11-01T11:30:12Z,user01@example.com,"Confirm login",true
+ph43,2025-11-01T11:35:42Z,user02@example.com,"Security alert",false
+ph44,2025-11-01T11:40:10Z,admin@example.com,"Verify identity",true
+ph45,2025-11-01T11:45:33Z,jessicabraz@example.com,"Immediate action",true
+ph46,2025-11-01T11:50:05Z,user01@example.com,"Account locked",false
+ph47,2025-11-01T11:55:12Z,user02@example.com,"Update password",true
+ph48,2025-11-01T12:00:42Z,admin@example.com,"Security warning",true
+ph49,2025-11-01T12:05:10Z,jessicabraz@example.com,"Confirm credentials",false
+ph50,2025-11-01T12:10:33Z,user01@example.com,"Verify identity",true
+
