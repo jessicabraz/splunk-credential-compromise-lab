@@ -50,6 +50,9 @@ index="portifolio_lab2" sourcetype="phish_emails" clicked=true
 index="portifolio_lab2" sourcetype="login_logs" username="jessicabraz"
 | table event_id, timestamp, username, src_ip, status, device
 
+![User Timeline](screenshoot/events-jessica.png)
+
+
 
 4️⃣ Phishing → Login correlation
 
@@ -151,6 +154,7 @@ Markdown for documentation (GitHub)
 Jessica Braz — Cybersecurity Student
 Location: Australia
 GitHub: https://github.com/jessicabraz
+
 
 
 
