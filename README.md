@@ -86,6 +86,7 @@ index="portifolio_lab2" sourcetype="login_logs" status="failed"
 index="portifolio_lab2" sourcetype="login_logs" status="success" NOT src_ip="192.168.*"
 | table timestamp, username, src_ip, device
 | sort - timestamp
+```
 
 Created Dashboard with panels for:
 
@@ -153,5 +154,6 @@ Markdown for documentation (GitHub)
 Jessica Braz — Cybersecurity Student
 Location: Australia
 GitHub: https://github.com/jessicabraz
+
 
 
