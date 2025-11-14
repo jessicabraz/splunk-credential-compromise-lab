@@ -29,26 +29,29 @@ Created index: portifolio_lab2.
 
 Ingested CSV files as data inputs with correct sourcetypes (phish_emails, login_logs, process_activity) and validated field extraction.
 
-Ran example SPL queries:
+### Ran Example SPL Queries
 
-All events:
-
+**1️⃣ All events:**
+```spl
 index="portifolio_lab2"
 
 
-Users who clicked phishing emails:
+
+2️⃣ Users who clicked phishing emails
 
 index="portifolio_lab2" sourcetype="phish_emails" clicked=true
 | table email_id, recipient, timestamp, clicked
+| sort - timestamp
 
 
-Login activity for user (example: jessicabraz):
+
+3️⃣ User login activity (example: jessicabraz)
 
 index="portifolio_lab2" sourcetype="login_logs" username="jessicabraz"
 | table event_id, timestamp, username, src_ip, status, device
 
 
-Phishing → Login correlation:
+4️⃣ Phishing → Login correlation
 
 index="portifolio_lab2" sourcetype="phish_emails"
 | eval username = lower(replace(recipient, "@.*", ""))
@@ -57,12 +60,32 @@ index="portifolio_lab2" sourcetype="phish_emails"
 | table email_id, recipient, username, timestamp, src_ip, status, device
 
 
-Suspicious PowerShell activity:
+5️⃣ Suspicious PowerShell activity:
 
 index="portifolio_lab2" sourcetype="process_activity"
 | search process="powershell" cmdline="*-enc*"
 | table proc_id, timestamp, host, username, process, cmdline
 
+6️⃣ Full correlation (Phish → Login → Process)
+
+index="portifolio_lab2" (sourcetype="phish_emails" OR sourcetype="login_logs" OR sourcetype="process_activity")
+| eval username=coalesce(username, replace(recipient, "@.*$", ""))
+| eval clicked_bool=if(clicked="true", 1, 0)
+| transaction username maxspan=1h startswith=(sourcetype="phish_emails" AND clicked_bool=1) endswith=(sourcetype="process_activity")
+| table username, duration, eventcount, _time, email_id, event_id, proc_id
+| sort - _time
+
+7️⃣ Failed logins (Brute‑Force indicator)
+
+index="portifolio_lab2" sourcetype="login_logs" status="failed"
+| stats count by username
+| sort - count
+
+8️⃣ Successful logins from external IPs
+
+index="portifolio_lab2" sourcetype="login_logs" status="success" NOT src_ip="192.168.*"
+| table timestamp, username, src_ip, device
+| sort - timestamp
 
 Created Dashboard with panels for:
 
@@ -78,7 +101,6 @@ Configured alerts:
 
 User clicked phishing email → successful login (trigger if results > 0)
 
-Multiple failed login attempts (≥5 in 10 minutes)
 
 ---
 
@@ -116,16 +138,6 @@ Reinforced understanding of credential compromise and lateral movement technique
 
 ---
 
-## 🚀 Next Steps
-
-Ingest real-world log sources (network, Linux, cloud) for extended correlation.
-
-Automate alert response with scripts or webhooks.
-
-Simulate lateral movement and escalated attacks to enhance lab complexity.
-
----
-
 ## 🧰 Tools Used
 
 Splunk Free (Local)
@@ -141,4 +153,5 @@ Markdown for documentation (GitHub)
 Jessica Braz — Cybersecurity Student
 Location: Australia
 GitHub: https://github.com/jessicabraz
+
 
