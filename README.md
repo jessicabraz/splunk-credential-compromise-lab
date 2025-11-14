@@ -115,6 +115,20 @@ User clicked phishing email → successful login (trigger if results > 0)
 
 ---
 
+## 🔔 Alerts
+
+Configured alerts:
+
+User clicked phishing email → successful login
+
+Trigger: result count > 0, Frequency: every 15 minutes
+
+Screenshot of alert configuration:
+
+![Alert Configuration](screenshoot/alert-config.png)
+
+---
+
 ## 🔍Results
 
 Identified users who clicked phishing emails and subsequently logged in successfully.
@@ -154,6 +168,7 @@ Markdown for documentation (GitHub)
 Jessica Braz — Cybersecurity Student
 Location: Australia
 GitHub: https://github.com/jessicabraz
+
 
 
 
