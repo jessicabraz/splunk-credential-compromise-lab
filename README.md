@@ -108,7 +108,7 @@ User clicked phishing email → successful login (trigger if results > 0)
 ## 📊 Dashboard Examples
 
 **Full Dashboard Overview**  
-![Full Dashboard](screenshots/dashboard-credential-compromise.png)
+![Full Dashboard](screenshoot/dashboard-credential-compromise.png)
 
 ---
 
@@ -151,6 +151,7 @@ Markdown for documentation (GitHub)
 Jessica Braz — Cybersecurity Student
 Location: Australia
 GitHub: https://github.com/jessicabraz
+
 
 
 
